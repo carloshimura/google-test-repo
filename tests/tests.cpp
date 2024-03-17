@@ -12,7 +12,7 @@ TEST(Operations, checkSum) {
   ASSERT_EQ(op.sum(1,5), 6);
 
   ASSERT_EQ(op.div(4, 4), 1);
-  ASSERT_EQ(op.div(2, 4), 2);
+  ASSERT_EQ(op.div(4, 2), 2);
   ASSERT_EQ(op.div(3, 3), 1);
 
   EXPECT_EQ(op.mash(2, 2, 1), 4);
