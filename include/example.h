@@ -9,6 +9,7 @@ class Operations {
 public:
   int sum(int a, int b);
   int mul(int a, int b);
+  int fact(int a);
   int exp(int base, int exponent);
   int div(int a, int b);
   int mash(int a, int b, int c);

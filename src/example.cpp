@@ -11,6 +11,13 @@ int Operations::mul(int a, int b) {
   return a * b;
 }
 
+int Operations::fact(int a) {
+  for (int i = a -1; i > 0; i--) {
+    a *= i;
+  }
+  return a;
+}
+
 int Operations::exp(int base, int exponent) {
 	int x = base;
 	if (exponent == 0)
@@ -27,3 +34,4 @@ int Operations::div(int a, int b) {
 int Operations::mash(int a, int b, int c) {
   return ((a * b ) / c);
 }
+

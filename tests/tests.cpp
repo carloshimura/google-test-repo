@@ -9,6 +9,14 @@
 TEST(Operations, checkSum) {
   Operations op;
   ASSERT_EQ(op.sum(1,1), 2);
+
+TEST(Operations, checkFact) {
+  Operations op3;
+  ASSERT_EQ(op3.fact(5), 120);
+  ASSERT_EQ(op3.fact(0), 0);
+  ASSERT_NE(op3.fact(-1),0); // not equal
+}
+
    EXPECT_EQ(op.sum(1,1), 3);
   ASSERT_EQ(op.sum(1,5), 6);
 }
@@ -39,3 +47,4 @@ TEST(Operations, checkmash) {
   EXPECT_EQ(op.mash(2, 2, 1), 4);
   EXPECT_EQ(op.mash(2, 2, 1), 3);
 }
+
