@@ -17,3 +17,21 @@ int Operations::fact(int a) {
   }
   return a;
 }
+
+int Operations::exp(int base, int exponent) {
+	int x = base;
+	if (exponent == 0)
+		return 1;
+	while (exponent != 1) {
+		x = base * x;
+		exponent--;
+	}
+		return x;
+}
+int Operations::div(int a, int b) {
+  return a / b;
+}
+int Operations::mash(int a, int b, int c) {
+  return ((a * b ) / c);
+}
+
