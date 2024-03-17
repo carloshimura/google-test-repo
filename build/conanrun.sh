@@ -1,1 +1,0 @@
-. "/Users/domi/Desktop/web/build/conanrunenv-debug-x86_64.sh"

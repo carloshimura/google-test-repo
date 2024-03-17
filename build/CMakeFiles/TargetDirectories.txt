@@ -1,3 +1,0 @@
-/Users/domi/Desktop/web/build/CMakeFiles/project_tests.dir
-/Users/domi/Desktop/web/build/CMakeFiles/edit_cache.dir
-/Users/domi/Desktop/web/build/CMakeFiles/rebuild_cache.dir
