@@ -1,0 +1,24 @@
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: install cppunit
+        run: |
+          sudo apt install -y gcc-12 python3 cmake
+      - name: install conan
+        run: |
+          pip3 install conan===2.0.17
+          conan profile detect
+      - name: build the application
+        run: |
+          mkdir build
+          cd build
+          conan install ../conanfile.txt --build=missing -pr=default -of .
+          cmake -S .. -B . -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=./conan_toolchain.cmake
+          make project_tests -j $(nproc --all)
+          ./project_tests
