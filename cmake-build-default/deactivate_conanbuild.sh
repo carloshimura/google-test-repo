@@ -1,1 +1,0 @@
-. "/sam/teste-google/cmake-build-default/deactivate_conanbuildenv-debug-x86_64.sh"

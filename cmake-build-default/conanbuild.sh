@@ -1,1 +1,0 @@
-. "/sam/teste-google/cmake-build-default/conanbuildenv-debug-x86_64.sh"
