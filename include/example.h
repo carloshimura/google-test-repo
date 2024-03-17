@@ -9,6 +9,7 @@ class Operations {
 public:
   int sum(int a, int b);
   int mul(int a, int b);
+  int fact(int a);
 
 };
 
