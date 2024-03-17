@@ -8,5 +8,16 @@ int Operations::sum(int a, int b) {
   return a + b;
 }
 int Operations::mul(int a, int b) {
-  return a / b;
+  return a * b;
+}
+
+int Operations::exp(int base, int exponent) {
+	int x = base;
+	if (exponent == 0)
+		return 1;
+	while (exponent != 1) {
+		x = base * x;
+		exponent--;
+	}
+		return x;
 }

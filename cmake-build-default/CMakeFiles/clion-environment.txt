@@ -1,0 +1,3 @@
+ToolSet: 1.0 (local)Options: 
+
+Options:-DCMAKE_TOOLCHAIN_FILE=/sam/teste-google/cmake-build-default/conan_toolchain.cmake
