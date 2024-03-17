@@ -7,6 +7,9 @@
 int Operations::sum(int a, int b) {
   return a + b;
 }
-int Operations::mul(int a, int b) {
+int Operations::div(int a, int b) {
   return a / b;
+}
+int Operations::mash(int a, int b, int c) {
+  return ((a * b ) / c);
 }
