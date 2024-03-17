@@ -9,6 +9,8 @@
 TEST(Operations, checkSum) {
   Operations op;
   ASSERT_EQ(op.sum(1,1), 2);
+   EXPECT_EQ(op.sum(1,1), 3);
+  ASSERT_EQ(op.sum(1,5), 6);
 }
 
 TEST(Operations, checkmult) {
@@ -23,4 +25,17 @@ TEST(Operations, checkexp) {
 	EXPECT_EQ(op.exp(2,0), 1);
 	EXPECT_EQ(op.exp(2,1), 2);
 	EXPECT_EQ(op.exp(2,30),1073741824);
+}
+
+TEST(Operations, checkdiv) {
+
+  ASSERT_EQ(op.div(4, 4), 1);
+  ASSERT_EQ(op.div(4, 2), 2);
+  ASSERT_EQ(op.div(3, 3), 1);
+}
+
+TEST(Operations, checkmash) {
+
+  EXPECT_EQ(op.mash(2, 2, 1), 4);
+  EXPECT_EQ(op.mash(2, 2, 1), 3);
 }

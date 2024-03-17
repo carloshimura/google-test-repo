@@ -21,3 +21,9 @@ int Operations::exp(int base, int exponent) {
 	}
 		return x;
 }
+int Operations::div(int a, int b) {
+  return a / b;
+}
+int Operations::mash(int a, int b, int c) {
+  return ((a * b ) / c);
+}
